@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="saveToLocalStorage(event)">
+            <label for="expense">Choose expense amount</label>
+            <input type="text" id="amount" name="amount">
+            <label for="description">Choose descriptiont</label>
+            <input type="text" id="description" name="description">
+            <label for="expenseType">Choose a category</label> 
+            <select name="category" id="category">
+                <option value="movie">movie</option>
+                <option value="food">food</option>
+                <option value="date">date</option>
+                <option value="drinks">drinks</option>
+                <option value="travel">travel</option>
+            </select>
+            <button> Add Expense </button>
+            <ul id="listOfExpenses"></ul>
+        </form>
+    </div>
+            <script src="index.js"></script>
+</body>
+</html>
