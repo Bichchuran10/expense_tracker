@@ -7,13 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
         <form onsubmit="saveToLocalStorage(event)">
             <label for="expense">Choose expense amount</label>
             <input type="text" id="amount" name="amount">
             <label for="description">Choose descriptiont</label>
             <input type="text" id="description" name="description">
-            <label for="expenseType">Choose a category</label> 
+            <label for="category">Choose a category</label> 
             <select name="category" id="category">
                 <option value="movie">movie</option>
                 <option value="food">food</option>
@@ -24,7 +23,6 @@
             <button> Add Expense </button>
             <ul id="listOfExpenses"></ul>
         </form>
-    </div>
             <script src="index.js"></script>
 </body>
 </html>

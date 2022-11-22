@@ -1,7 +1,8 @@
 function saveToLocalStorage(event)
 {
   event.preventDefault()
-    let expenseAmount=event.target.amount.value
+  //amount,description,category are from 'name'
+    let expenseAmount=event.target.amount.value   
     let description=event.target.description.value
     let type=event.target.category.value
 
@@ -41,13 +42,13 @@ function showNewExpenseOnScreen(expense)
 }
 
 //edit
-function editExpenseDetails(expenseAmount,description,type)
+function editExpenseDetails(amount,description,category)
 {
-    document.getElementById('amount').value=expenseAmount;
+    document.getElementById('amount').value=amount;
     document.getElementById('description').value=description;
-    document.getElementById('category').value=type;
-console.log(expenseAmount,description,type)
-deleteExpense(expenseAmount)
+    document.getElementById('category').value=category;
+console.log(amount,description,category)
+deleteExpense(amount)
 }
 
 //for deletion from localStorage
